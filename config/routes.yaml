@@ -1,0 +1,29 @@
+api_get_games:
+    path:       /api/v1/games
+    controller: App\Controller\ApiController::getGames
+    methods:    GET|HEAD
+
+api_new_game:
+    path:       /api/v1/games
+    controller: App\Controller\ApiController::newGame
+    methods:    POST
+
+api_update_game:
+    path:       /api/v1/games/{game_id}
+    controller: App\Controller\ApiController::makeMove
+    methods:    PUT
+
+api_get_game:
+    path:       /api/v1/games/{game_id}
+    controller: App\Controller\ApiController::getGame
+    methods:    GET|HEAD
+
+api_delete_game:
+    path:       /api/v1/games/{game_id}
+    controller: App\Controller\ApiController::deleteGame
+    methods:    DELETE
+
+api_flush_games:
+    path:       /api/v1/games
+    controller: App\Controller\ApiController::flushGames
+    methods:    DELETE
